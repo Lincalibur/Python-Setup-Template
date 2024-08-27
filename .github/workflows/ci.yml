@@ -19,6 +19,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Create junit directory
+      run: mkdir -p junit
     - name: Run Tests
       run: |
         pytest --doctest-modules --junitxml=junit/test-results.xml --cov=src
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: junit/test-results.xml

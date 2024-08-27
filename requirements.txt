@@ -1,2 +1,3 @@
 sphinx
-sphinx-rtd-theme  # Optional, if using this theme
+sphinx-rtd-theme
+pytest
