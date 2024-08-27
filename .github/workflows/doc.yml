@@ -50,18 +50,3 @@ jobs:
       with:
         name: test-results
         path: junit/test-results.xml
-
-  notify:
-    runs-on: ubuntu-latest
-    needs: [build-docs, test]
-    steps:
-    - name: Send Slack notification
-      uses: slackapi/slack-github-action@v1
-      with:
-        payload: |
-          {
-            "text": "The build and deployment process has completed successfully.",
-            "channel": "#general"
-          }
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
