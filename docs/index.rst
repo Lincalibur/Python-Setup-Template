@@ -1,8 +1,3 @@
-.. Python-Setup-template documentation master file, created by
-   sphinx-quickstart on Tue Aug 27 18:44:52 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Python-Setup-template documentation
 ===================================
 
@@ -15,3 +10,7 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
+.. automodule:: main
+   :members:
+   :undoc-members:
+   :show-inheritance:

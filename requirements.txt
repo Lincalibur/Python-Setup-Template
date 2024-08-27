@@ -1,2 +1,2 @@
 sphinx
-sphinx-rtd-theme  # Optional, for a nicer theme
+sphinx-rtd-theme  # Optional, if using this theme
